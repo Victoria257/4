@@ -221,6 +221,7 @@ header {
     margin-right: 30px;
 }
 
+/* не можна так робити якщо буде hover, focus*/
 .icon::before {
     display: block;
     content: "";
@@ -344,28 +345,43 @@ header {
     background-image: url(../images/icons.svg/insta.svg), url(../images/icons.svg/Twitter.svg), url(../images/icons.svg/FB.svg), url(../images/icons.svg/in.svg);
 }
 
-.team p:hover::after,
-.team p:focus::after {
-    background-position: 32px;
-    background-color: tomato;
-}
 */
 
 .action {
     display: flex;
-    padding: 0;
+    padding: 0 32px;
     margin: 0;
     list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px solid red;
 }
 
-.button {
-    padding: 0;
+.social-nets {
+    padding: 12px;
     border: none;
-}
-
-.button-icon {
+    color: rgba(175, 177, 184, 1);
+    border-radius: 50%;
     width: 44px;
     height: 44px;
+    justify-content: center;
+    outline: 1px solid green;
+}
+
+.social-nets-icon {
+    
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    outline: 1px solid rosybrown;
+    }
+    
+}
+
+.social-nets:hover,
+.social-nets:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color:rgba(33, 150, 243, 1);
 }
 
 
