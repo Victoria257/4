@@ -155,6 +155,19 @@ header {
     margin-left: 50px;
 }
 
+.icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    outline: 1px solid blue;
+}
+
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    outline: 1px solid blue;
+}
 .title-section {
     max-width: 1600px;
     margin-left: auto;
@@ -321,6 +334,7 @@ header {
     line-height: 1.19;
     margin-right: 30px;
     padding-bottom: 30px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .team h3 {
@@ -354,7 +368,6 @@ header {
     list-style: none;
     justify-content: space-between;
     align-items: center;
-    outline: 1px solid red;
 }
 
 .social-nets {
@@ -365,7 +378,6 @@ header {
     width: 44px;
     height: 44px;
     justify-content: center;
-    outline: 1px solid green;
 }
 
 .social-nets-icon {
@@ -373,17 +385,58 @@ header {
     width: 20px;
     height: 20px;
     fill: currentColor;
-    outline: 1px solid rosybrown;
     }
     
-}
+
 
 .social-nets:hover,
 .social-nets:focus {
     color: rgba(255, 255, 255, 1);
-    background-color:rgba(33, 150, 243, 1);
+    background-color: var(--blue);
 }
 
+.section-client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+.section-client h2 {
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    margin-bottom: 50px;
+    margin-top: 0;
+
+}
+
+.client {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client li {
+    width: 170px;
+    border: solid 1px rgba(175, 177, 184, 1);
+    border-radius: 4px;
+}
+
+.client-icon {
+    width: 106px;
+    height: 60px;
+}
+
+.client li:hover,
+.client li:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--blue);
+    border-color:var(--blue);
+}
 
 footer {
     background-color: var(--dark-background);
@@ -411,6 +464,55 @@ address {
 .foorer-mail,
 .foorer-phone {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-container {
+    display: flex;
+}
+
+.join {
+    margin-left: 70px;
+}
+
+.join h2 {
+    font-style: 700;
+    font-size: 14px;
+    Line-height: 1.14;
+    text-transform: uppercase;
+    margin: 0;
+    
+}
+
+.footer-icon {
+    display: flex;
+    margin-top: 20px;
+}
+
+.grey-icon-set {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    outline: solid blue;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.grey-icon-set:last-child {
+    margin-right: 0;
+}
+
+.grey-icon-item {
+    width: 20px;
+    height: 20px;
+    outline: solid rosybrown;
+}
+
+.grey-icon-set:hover,
+.grey-icon-set:focus {
+    background-color: var(--blue);
 }
 
 .portfolio-buttons {
