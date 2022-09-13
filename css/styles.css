@@ -151,6 +151,11 @@ header {
     color: var(--pargraf-text-color);
 }
 
+.site-nav-contacts a:hover,
+.site-nav-contacts a:focus {
+    color: var(--blue);
+}
+
 .site-nav-contacts li {
     margin-left: 50px;
 }
@@ -416,13 +421,14 @@ header {
 .client {
     display: flex;
     justify-content: space-between;
-    padding: 16px 32px;
+    
 }
 
 .client li {
     width: 170px;
     border: solid 1px rgba(175, 177, 184, 1);
     border-radius: 4px;
+    padding: 16px 32px;
 }
 
 .client-icon {
