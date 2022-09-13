@@ -542,6 +542,16 @@ address {
     /* justify-content: space-between ; - можна вписувати замість flex-basis: content; щоб розподілити текст*/
 }
 
+.item-button:hover,
+.item-button:focus {
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.item:hover,
+.item:focus {
+    box-shadow: 6px 1px 4px rgba(0, 0, 0, 0.16), 4px 0px 4px rgba(0, 0, 0, 0.06), 1px 0px 1px rgba(0, 0, 0, 0.12);
+}
+
 .portfolio {
     margin-top: 34px;
     margin-bottom: 94px;
