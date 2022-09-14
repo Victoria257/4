@@ -439,8 +439,8 @@ header {
     fill: rgba(175, 177, 184, 1);
 }
 
-.section-client a:hover,
-.section-client a:focus {
+.client a:hover,
+.client a:focus {
     color: var(--blue);
     fill: var(--blue);
 }
