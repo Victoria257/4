@@ -7,6 +7,15 @@
 
 }
 
+:focus {
+    outline: none;
+}
+
+a:hover {
+    border: blue;
+}
+
+
 body {
     background-color: var(--white);
     font-family: roboto, sans-serif;
@@ -44,10 +53,15 @@ button {
 }
 
 /* цвет кнопки гпавной при ховере 188CE8 */
-button:hover,
+button:hover {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
 button:focus {
     color: var(--white);
     background-color: var(--blue);
+    outline: 3px solid black;
 }
 
 .container {
@@ -79,11 +93,10 @@ button:focus {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-}
+    }
 
 .logo-black {
     color: rgba(0, 0, 0, 1);
-    margin-right: 93px;
 }
 
 .logo-white {
@@ -104,6 +117,9 @@ header {
 .nav-container-left {
     display: flex;
     align-items: center;
+}
+.site-nav-container {
+    margin-left: 91px;
 }
 
 .site-nav-container li {
@@ -130,10 +146,15 @@ header {
     color: var(--blue);
 }
 
-.navigation a:hover,
+.navigation a:hover {
+    color: var(--blue);
+    fill: var(--blue);
+}
+
 .navigation a:focus {
     color: var(--blue);
     fill: var(--blue);
+    outline: 3px solid black;
 }
 
 .nav-container-right {
@@ -152,9 +173,13 @@ header {
     color: var(--pargraf-text-color);
 }
 
-.site-nav-contacts a:hover,
+.site-nav-contacts a:hover {
+    color: var(--blue);
+}
+
 .site-nav-contacts a:focus {
     color: var(--blue);
+    outline: 3px solid black;
 }
 
 .site-nav-contacts li {
@@ -221,9 +246,13 @@ header {
     padding: 10px 26px;
 }
 
-.button-title:hover,
+.button-title:hover {
+    background-color: rgba(24, 140, 232, 1);
+}
+
 .button-title:focus {
     background-color: rgba(24, 140, 232, 1);
+    outline: 3px solid black;
 }
 
 .benefits {
@@ -399,7 +428,7 @@ header {
 
 
 .social-nets:hover,
-.social-nets:focus {
+.social-nets:focus-within {
     color: rgba(255, 255, 255, 1);
     background-color: var(--blue);
 }
@@ -487,6 +516,14 @@ address {
     display: flex;
 }
 
+.logo-focus:focus {
+   outline: 3px solid black;
+}
+
+.footer-address a:focus {
+    outline: 3px solid black;
+}
+
 .join {
     margin-left: 70px;
 }
@@ -526,7 +563,7 @@ address {
 }
 
 .grey-icon-set:hover,
-.grey-icon-set:focus {
+.grey-icon-set:focus-within {
     background-color: var(--blue);
 }
 
@@ -558,8 +595,11 @@ address {
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.item:hover,
-.item:focus {
+.item:hover {
+    box-shadow: 6px 1px 4px rgba(0, 0, 0, 0.16), 4px 0px 4px rgba(0, 0, 0, 0.06), 1px 0px 1px rgba(0, 0, 0, 0.12);
+}
+
+.item:focus-within {
     box-shadow: 6px 1px 4px rgba(0, 0, 0, 0.16), 4px 0px 4px rgba(0, 0, 0, 0.06), 1px 0px 1px rgba(0, 0, 0, 0.12);
 }
 
@@ -576,10 +616,6 @@ address {
     align-items: center;
     gap: 30px;
     margin-bottom: 0;
-}
-
-.item {
-   
 }
 
  .card {
